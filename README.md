@@ -9,8 +9,8 @@
  
 Nota: si estas en un entorno restringido puedes intentar usar
 ```
-  npx al inicio de npm
-  npx npm install
+(npx al inicio de npm)
+npx npm install
 ```
 ```
 npm install
@@ -25,6 +25,26 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Cargar o recargar semilla desde pokeApi
+```
+(get) http://localhost:3000/api/v2/seed/ 
+```
+6. Si existiera un error al tratar de acceder a la api de pokemon usar la carga del archivo json
+dentro del proyecto pokeList.json usando el siguiente endPoint desde postman. En body y en value poner el nombre de "file" en el desplegeable seleccior type file 
+```
+(Post) http://localhost:3000/api/v2/seed/upload
+```
+
+7. Clonar el archivo __.env.template__ y renonbrar la copia __.env__
+
+8. Llenas las variables de entorno definidas en el __.env__
+
+9. Ejecutar la aplicación en desarrollo 
+```
+npm run start:dev
+```
+
+
 ## Stack usado
 
 * MongoDB
